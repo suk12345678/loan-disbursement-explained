@@ -15,38 +15,24 @@ body {
 nav {
     background: #2c3e50;
     color: white;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
+    text-align: center;
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.nav-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-links a {
+nav a {
     color: white;
     text-decoration: none;
+    margin: 0 1rem;
     transition: opacity 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
 }
 
 .nav-links a:hover,
@@ -269,3 +255,54 @@ footer a:hover {
     }
 }
 
+/* FAQ Styles */
+.faq-section {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.faq-item {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid #3498db;
+}
+
+.faq-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.faq-item p {
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.faq-item ul, .faq-item ol {
+    margin-left: 2rem;
+    color: #555;
+}
+
+.faq-item li {
+    margin-bottom: 0.5rem;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.intro h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
