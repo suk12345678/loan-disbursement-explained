@@ -71,12 +71,31 @@
             line-height: 1.6;
             padding: 10px;
             margin: 0;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Howard_University_seal.svg/800px-Howard_University_seal.svg.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 500px 500px;
+            opacity: 0.5;
+            z-index: 0;
+            pointer-events: none;
         }
 
         .container {
             max-width: 700px;
             margin: 0 auto;
             padding: 20px;
+            position: relative;
+            z-index: 1;
         }
 
         .header {
